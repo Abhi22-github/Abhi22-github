@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
+
+.manrope-font {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;;
+    background-color: #000000; 
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    animation: changeBg 10s linear infinite;
+    display: grid;
+    place-items: center;
+}
+
+@keyframes changeBg {
+    0% {
+        background-color: #242222;
+    }
+    20% {
+        background-color: #242b2e;
+    }
+    40% {
+        background-color: #242b2b;
+    }
+    60% {
+        background-color: #242b2b;
+    }
+    80% {
+        background-color: #242B2E;
+    }
+    100% {
+        background-color: #242222;
+    }
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+
+.name{
+    margin-left: 4px;
+}
+
+.hey {
+    margin-right: 4px;
+}
+
+.particles-js{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.page-upper-layer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    color: whitesmoke;
+    /* border: 1px solid red; */
+}
+
+.about-p{
+    display: flex;
+    font-size: medium;
+}
+
+.emoji-group {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.divider {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+/* h1 {
+    position: absolute;
+    font-family: 'Mukta', sans-serif;
+    color: whitesmoke;
+} */
+
+
+/* Button animation */
+
+.button {
+    background-color: #0d0d0d00;
+    border: none;
+    color: #FFFFFF;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .button-group {
+    display: flex;
+    margin-top: 20px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* Coming soon page */
+  .cs-upper-layer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    color: whitesmoke;
+  }
+
+  .back {
+    text-decoration: none;
+    color: white;
+  }
+
+  @media screen and (max-width: 750px) {
+    body {
+        display: flex;
+        justify-self: left;
+        align-self: flex-start;
+        font-size: larger;
+    }
+
+    .page-upper-layer {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heading {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+    }
+
+    .name{
+        margin-left: 0px;
+    }
+    
+    .hey {
+        margin-right: 0px;
+    }
+
+    .about-p {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        /* border: 1px solid red; */
+    }
+    
+    .divider {
+        display: none;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .emoji-group {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        /* justify-self: left; */
+        margin-top: 20px;
+        /* border: 1px solid rebeccapurple; */
+    }
+
+    .button {
+        /* padding-top: 5px;
+        padding-bottom: 5px; */
+        /* border: 1px solid red; */
+    }
+   
+}
